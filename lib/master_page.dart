@@ -21,6 +21,8 @@ class MasterPage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: screenHeight * 0.03,),
+
+              //bahan, supplier
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 25),
                 child: Row(
@@ -43,6 +45,8 @@ class MasterPage extends StatelessWidget {
                   ],
                 ),
               ),
+
+              //cmt, pola
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 25),
                 child: Row(
@@ -51,8 +55,8 @@ class MasterPage extends StatelessWidget {
                     MenuButton(
                       screenHeight: screenHeight,
                       screenWidth: screenWidth,
-                      imageResource: 'assets/images/cutting_logo.jpg',
-                      menuName: 'Cutting',
+                      imageResource: 'assets/images/cmt_logo.png',
+                      menuName: 'CMT',
                       pageDestination: const MasterPage(),
                     ),
                     MenuButton(
@@ -65,6 +69,8 @@ class MasterPage extends StatelessWidget {
                   ],
                 ),
               ),
+
+              //outlet, produk
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 25),
                 child: Row(
@@ -87,6 +93,8 @@ class MasterPage extends StatelessWidget {
                   ],
                 ),
               ),
+
+              //jenis material, warna
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 25),
                 child: Row(
@@ -109,6 +117,8 @@ class MasterPage extends StatelessWidget {
                   ],
                 ),
               ),
+
+              //input jadi, input by qr code
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 25),
                 child: Row(
@@ -117,8 +127,63 @@ class MasterPage extends StatelessWidget {
                     MenuButton(
                       screenHeight: screenHeight,
                       screenWidth: screenWidth,
-                      imageResource: 'assets/images/master_logo.jpg',
-                      menuName: 'Jenis Material',
+                      imageResource: 'assets/images/qrcode_logo.jpg',
+                      menuName: 'Input Jadi',
+                      pageDestination: const MasterPage(),
+                    ),
+                    MenuButton(
+                      screenHeight: screenHeight,
+                      screenWidth: screenWidth,
+                      imageResource: 'assets/images/qrcode_logo.png',
+                      menuName: 'Input by QR',
+                      pageDestination: const MasterPage(),
+                    ),
+                  ],
+                ),
+              ),
+
+              //accessories, tools & equipment
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 25),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    MenuButton(
+                      screenHeight: screenHeight,
+                      screenWidth: screenWidth,
+                      imageResource: 'assets/images/qrcode_logo.jpg',
+                      menuName: 'Accessories',
+                      pageDestination: const MasterPage(),
+                    ),
+                    MenuButton(
+                      screenHeight: screenHeight,
+                      screenWidth: screenWidth,
+                      imageResource: 'assets/images/qrcode_logo.jpg',
+                      menuName: 'Tools & Equipment',
+                      pageDestination: const MasterPage(),
+                    ),
+                  ],
+                ),
+              ),
+
+              //adjustments, stok opname
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 25),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    MenuButton(
+                      screenHeight: screenHeight,
+                      screenWidth: screenWidth,
+                      imageResource: 'assets/images/qrcode_logo.jpg',
+                      menuName: 'Adjustment',
+                      pageDestination: const MasterPage(),
+                    ),
+                    MenuButton(
+                      screenHeight: screenHeight,
+                      screenWidth: screenWidth,
+                      imageResource: 'assets/images/qrcode_logo.jpg',
+                      menuName: 'Stock Opname',
                       pageDestination: const MasterPage(),
                     ),
                   ],
